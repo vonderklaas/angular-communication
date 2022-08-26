@@ -1,0 +1,16 @@
+<div>
+  <h1>Parent</h1>
+  <br />
+  <button (click)="changeFilter('colors')">Colors</button>
+  <button (click)="changeFilter('fruits')">Fruits</button>
+  <button (click)="changeFilter('animals')">Animals</button>
+  <br />
+  <br />
+  <span *ngIf="selectedElement"> {{ selectedElement }} is clicked! </span>
+</div>
+<br />
+<app-child
+  (selectedOptionEvent)="displaySelectedOption($event)"
+  [filter]="filterOption"
+  [elements]="filteredItems"
+></app-child>

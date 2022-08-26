@@ -1,0 +1,29 @@
+div {
+  background-color: #f3dade;
+  color: darkmagenta;
+  min-height: 250px;
+  padding: 20px;
+}
+
+button {
+  margin: 0;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 20px;
+  background-color: pink;
+  color: #111;
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px #ccc;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background-color: #111;
+  color: pink;
+}
+
+p {
+  font-size: 24px;
+  font-weight: bold;
+}

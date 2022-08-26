@@ -1,0 +1,10 @@
+<div>
+  <h1>Child</h1>
+  <p>Applied filter: {{ filter }}</p>
+  <br />
+  <span *ngIf="elements">
+    <span *ngFor="let element of elements">
+      <button (click)="selectElement(element)">{{ element.name }}</button>
+    </span>
+  </span>
+</div>
